@@ -14,6 +14,5 @@ module OpenApiSDK
         DESC = new('desc')
       end
     end
-
   end
 end
