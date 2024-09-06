@@ -14,6 +14,5 @@ module OpenApiSDK
         AMOUNT = new('amount')
       end
     end
-
   end
 end
