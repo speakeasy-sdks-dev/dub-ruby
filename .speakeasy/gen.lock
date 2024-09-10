@@ -4,7 +4,7 @@ management:
   docChecksum: a8165462b93c33c03cc5540b2f764d0b
   docVersion: 0.0.1
   speakeasyVersion: internal
-  generationVersion: 2.415.1
+  generationVersion: 2.415.0
   releaseVersion: 0.2.2-alpha.8
   configChecksum: 99db5c5c4717564a3245a6b7e08eb66d
   repoURL: https://github.com/dubinc/dub-ruby.git
@@ -12,7 +12,7 @@ management:
   published: true
 features:
   ruby:
-    core: 3.2.20
+    core: 3.2.21
     deprecations: 2.81.1
     examples: 2.81.3
     flattening: 2.81.1
