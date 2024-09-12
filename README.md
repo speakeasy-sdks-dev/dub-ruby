@@ -11,8 +11,25 @@
 
 Learn more about the Dub.co Ruby SDK in the [official documentation](https://dub.co/docs/sdks/ruby/overview).
 
+<!-- Start Summary [summary] -->
+## Summary
+
+Dub.co API: Dub is link management infrastructure for companies to create marketing campaigns, link sharing features, and referral programs.
+<!-- End Summary [summary] -->
+
+<!-- Start Table of Contents [toc] -->
+## Table of Contents
+
+* [SDK Installation](#sdk-installation)
+* [SDK Example Usage](#sdk-example-usage)
+* [Available Resources and Operations](#available-resources-and-operations)
+* [Server Selection](#server-selection)
+<!-- End Table of Contents [toc] -->
+
 <!-- Start SDK Installation [installation] -->
 ## SDK Installation
+
+The SDK can be installed using [RubyGems](https://rubygems.org/):
 
 ```bash
 gem install dub
@@ -86,6 +103,25 @@ end
 <!-- Start Available Resources and Operations [operations] -->
 ## Available Resources and Operations
 
+<details open>
+<summary>Available methods</summary>
+
+### [Analytics](docs/sdks/analytics/README.md)
+
+* [retrieve](docs/sdks/analytics/README.md#retrieve) - Retrieve analytics for a link, a domain, or the authenticated workspace.
+
+### [Domains](docs/sdks/domains/README.md)
+
+* [list](docs/sdks/domains/README.md#list) - Retrieve a list of domains
+* [create](docs/sdks/domains/README.md#create) - Create a domain
+* [delete](docs/sdks/domains/README.md#delete) - Delete a domain
+* [update](docs/sdks/domains/README.md#update) - Update a domain
+
+
+### [Events](docs/sdks/events/README.md)
+
+* [list](docs/sdks/events/README.md#list) - Retrieve a list of events
+
 ### [Links](docs/sdks/links/README.md)
 
 * [list](docs/sdks/links/README.md#list) - Retrieve a list of links
@@ -98,22 +134,13 @@ end
 * [update_many](docs/sdks/links/README.md#update_many) - Bulk update links
 * [upsert](docs/sdks/links/README.md#upsert) - Upsert a link
 
+### [Metatags](docs/sdks/metatags/README.md)
+
+* [get](docs/sdks/metatags/README.md#get) - Retrieve the metatags for a URL
+
 ### [QRCodes](docs/sdks/qrcodes/README.md)
 
 * [get](docs/sdks/qrcodes/README.md#get) - Retrieve a QR code
-
-### [Analytics](docs/sdks/analytics/README.md)
-
-* [retrieve](docs/sdks/analytics/README.md#retrieve) - Retrieve analytics for a link, a domain, or the authenticated workspace.
-
-### [Events](docs/sdks/events/README.md)
-
-* [list](docs/sdks/events/README.md#list) - Retrieve a list of events
-
-### [Workspaces](docs/sdks/workspaces/README.md)
-
-* [get](docs/sdks/workspaces/README.md#get) - Retrieve a workspace
-* [update](docs/sdks/workspaces/README.md#update) - Update a workspace
 
 ### [Tags](docs/sdks/tags/README.md)
 
@@ -121,22 +148,18 @@ end
 * [create](docs/sdks/tags/README.md#create) - Create a new tag
 * [update](docs/sdks/tags/README.md#update) - Update a tag
 
-### [Domains](docs/sdks/domains/README.md)
-
-* [list](docs/sdks/domains/README.md#list) - Retrieve a list of domains
-* [create](docs/sdks/domains/README.md#create) - Create a domain
-* [delete](docs/sdks/domains/README.md#delete) - Delete a domain
-* [update](docs/sdks/domains/README.md#update) - Update a domain
-
 ### [Track](docs/sdks/track/README.md)
 
 * [lead](docs/sdks/track/README.md#lead) - Track a lead
 * [sale](docs/sdks/track/README.md#sale) - Track a sale
 * [customer](docs/sdks/track/README.md#customer) - Track a customer
 
-### [Metatags](docs/sdks/metatags/README.md)
+### [Workspaces](docs/sdks/workspaces/README.md)
 
-* [get](docs/sdks/metatags/README.md#get) - Retrieve the metatags for a URL
+* [get](docs/sdks/workspaces/README.md#get) - Retrieve a workspace
+* [update](docs/sdks/workspaces/README.md#update) - Update a workspace
+
+</details>
 <!-- End Available Resources and Operations [operations] -->
 
 <!-- Start Server Selection [server] -->
