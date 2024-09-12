@@ -80,8 +80,8 @@ req = ::OpenApiSDK::Operations::CreateLinkRequestBody.new(
   url: "https://google.com",
   external_id: "123456",
   tag_ids: [
-  "<value>",
-],
+    "clux0rgak00011...",
+  ],
 )
     
 res = s.links.create(req)
@@ -248,12 +248,12 @@ s.config_security(
 
     
 res = s.links.update(link_id="<value>", request_body=::OpenApiSDK::Operations::UpdateLinkRequestBody.new(
-    url: "https://google.com",
-    external_id: "123456",
-    tag_ids: [
-    "<value>",
+  url: "https://google.com",
+  external_id: "123456",
+  tag_ids: [
+    "clux0rgak00011...",
   ],
-  ))
+))
 
 if ! res.link_schema.nil?
   # handle response
@@ -298,8 +298,8 @@ req = [
     url: "https://google.com",
     external_id: "123456",
     tag_ids: [
-    "<value>",
-  ],
+      "clux0rgak00011...",
+    ],
   ),
 ]
     
@@ -349,8 +349,8 @@ req = ::OpenApiSDK::Operations::BulkUpdateLinksRequestBody.new(
   data: ::OpenApiSDK::Operations::Data.new(
     url: "https://google.com",
     tag_ids: [
-    "<value>",
-  ],
+      "clux0rgak00011...",
+    ],
   ),
 )
     
@@ -397,8 +397,8 @@ req = ::OpenApiSDK::Operations::UpsertLinkRequestBody.new(
   url: "https://google.com",
   external_id: "123456",
   tag_ids: [
-  "<value>",
-],
+    "clux0rgak00011...",
+  ],
 )
     
 res = s.links.upsert(req)
