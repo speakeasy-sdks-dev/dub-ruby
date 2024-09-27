@@ -41,7 +41,6 @@ end
 
 
 
-
 ## create
 
 Create a new tag for the authenticated workspace.
@@ -79,7 +78,6 @@ end
 ### Response
 
 **[T.nilable(::OpenApiSDK::Operations::CreateTagResponse)](../../models/operations/createtagresponse.md)**
-
 
 
 
@@ -121,7 +119,6 @@ end
 
 
 
-
 ## update
 
 Update a tag in the workspace.
@@ -158,5 +155,4 @@ end
 ### Response
 
 **[T.nilable(::OpenApiSDK::Operations::UpdateTagResponse)](../../models/operations/updatetagresponse.md)**
-
 

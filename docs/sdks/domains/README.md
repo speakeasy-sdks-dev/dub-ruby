@@ -52,7 +52,6 @@ end
 
 
 
-
 ## create
 
 Create a domain for the authenticated workspace.
@@ -98,7 +97,6 @@ end
 
 
 
-
 ## delete
 
 Delete a domain from a workspace. It cannot be undone. This will also delete all the links associated with the domain.
@@ -134,7 +132,6 @@ end
 ### Response
 
 **[T.nilable(::OpenApiSDK::Operations::DeleteDomainResponse)](../../models/operations/deletedomainresponse.md)**
-
 
 
 
@@ -179,5 +176,4 @@ end
 ### Response
 
 **[T.nilable(::OpenApiSDK::Operations::UpdateDomainResponse)](../../models/operations/updatedomainresponse.md)**
-
 
