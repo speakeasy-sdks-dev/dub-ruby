@@ -1,4 +1,4 @@
-speakeasyVersion: 1.418.3
+speakeasyVersion: internal
 sources:
     dub:
         sourceNamespace: dub
@@ -13,8 +13,6 @@ targets:
         sourceNamespace: dub
         sourceRevisionDigest: sha256:9f3f59d8d24a14a6c9eda5fc8356ab84b6545950a6342dac83ca374d498ef3ae
         sourceBlobDigest: sha256:11b4010cd516344e0395503cdeb2525265d07299afc827d0cb7ffda8c4f160ce
-        codeSamplesNamespace: code-samples-ruby-my-first-target
-        codeSamplesRevisionDigest: sha256:a1940365cd370018b415769a10856fd6872fe7261d9da876362c83455dc20181
 workflow:
     workflowVersion: 1.0.0
     speakeasyVersion: latest
