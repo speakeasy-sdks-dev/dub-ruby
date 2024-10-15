@@ -4,10 +4,42 @@
 
 ### Available Operations
 
-* [create](#create) - Create a new tag
 * [list](#list) - Retrieve a list of tags
-* [update](#update) - Update a tag
+* [create](#create) - Create a new tag
 * [delete](#delete) - Delete a tag
+* [update](#update) - Update a tag
+
+## list
+
+Retrieve a list of tags for the authenticated workspace.
+
+### Example Usage
+
+```ruby
+require 'dub'
+
+
+s = ::OpenApiSDK::Dub.new
+s.config_security(
+  ::OpenApiSDK::Shared::Security.new(
+    token: "DUB_API_KEY",
+  )
+)
+
+    
+res = s.tags.list()
+
+if ! res.tag_schemas.nil?
+  # handle response
+end
+
+```
+
+### Response
+
+**[T.nilable(::OpenApiSDK::Operations::GetTagsResponse)](../../models/operations/gettagsresponse.md)**
+
+
 
 ## create
 
@@ -49,9 +81,9 @@ end
 
 
 
-## list
+## delete
 
-Retrieve a list of tags for the authenticated workspace.
+Delete a tag from the workspace. All existing links will still work, but they will no longer be associated with this tag.
 
 ### Example Usage
 
@@ -67,17 +99,23 @@ s.config_security(
 )
 
     
-res = s.tags.list()
+res = s.tags.delete(id="<id>")
 
-if ! res.tag_schemas.nil?
+if ! res.object.nil?
   # handle response
 end
 
 ```
 
+### Parameters
+
+| Parameter                    | Type                         | Required                     | Description                  |
+| ---------------------------- | ---------------------------- | ---------------------------- | ---------------------------- |
+| `id`                         | *::String*                   | :heavy_check_mark:           | The ID of the tag to delete. |
+
 ### Response
 
-**[T.nilable(::OpenApiSDK::Operations::GetTagsResponse)](../../models/operations/gettagsresponse.md)**
+**[T.nilable(::OpenApiSDK::Operations::DeleteTagResponse)](../../models/operations/deletetagresponse.md)**
 
 
 
@@ -117,42 +155,4 @@ end
 ### Response
 
 **[T.nilable(::OpenApiSDK::Operations::UpdateTagResponse)](../../models/operations/updatetagresponse.md)**
-
-
-
-## delete
-
-Delete a tag from the workspace. All existing links will still work, but they will no longer be associated with this tag.
-
-### Example Usage
-
-```ruby
-require 'dub'
-
-
-s = ::OpenApiSDK::Dub.new
-s.config_security(
-  ::OpenApiSDK::Shared::Security.new(
-    token: "DUB_API_KEY",
-  )
-)
-
-    
-res = s.tags.delete(id="<id>")
-
-if ! res.object.nil?
-  # handle response
-end
-
-```
-
-### Parameters
-
-| Parameter                    | Type                         | Required                     | Description                  |
-| ---------------------------- | ---------------------------- | ---------------------------- | ---------------------------- |
-| `id`                         | *::String*                   | :heavy_check_mark:           | The ID of the tag to delete. |
-
-### Response
-
-**[T.nilable(::OpenApiSDK::Operations::DeleteTagResponse)](../../models/operations/deletetagresponse.md)**
 
